@@ -1,0 +1,383 @@
+
+/* -----------------------*/
+/* BASIC SETUP            */
+/* -----------------------*/
+
+// COLORS
+$main-purple: #231161;
+$active-purple: #5024FA;
+$background: #F9F9F9;
+$main-white: #fff;
+$hover-border: #FF8671;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: $main-white;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+
+// LINKS
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: $main-purple;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: $active-purple;
+  border-bottom: 2px solid $hover-border;
+}
+
+/* -----------------------*/
+/* REUSABLE COMPONENTS */
+/* -----------------------*/
+
+.row {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* -----------------------*/
+/* HEADER */
+/* -----------------------*/
+
+nav {
+  height: 117px;
+}
+
+// MAIN NAV
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 41px;
+  margin-right: 75px;
+  width: 330px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.main-nav li {
+  display: inline-block;
+  line-height: 36px;
+  color: $main-purple;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.logo {
+  margin: 37px 0 36px 64px;
+  width: 38px;
+  height: 44px;
+}
+
+/* -----------------------*/
+/* SERVICES */
+/* -----------------------*/
+.services h3 {
+  color: $main-purple;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  height: 44px;
+}
+
+.services img {
+  display: block;
+  margin: 0 auto; 
+}
+
+.services {
+  height: 985px;
+  background-color: $background
+}
+
+.slogan {
+  width: 48.5%;
+  height: 100px;
+  text-align: center;
+  margin: 133px auto 0 auto;
+  font-size: 36px;
+  color: $main-purple;
+  font-weight: 400;
+}
+
+.icons-top,
+.icons-bottom {
+  display: flex;
+}
+
+.icons-top {
+  margin: 114px auto 0 auto;
+  width: 55%;
+}
+
+.icon-branding {
+  width: 69px;
+  height: 84px;
+}
+
+.icon-digi-design {
+  width: 92px;
+  height: 88px;
+}
+
+.branding h3 {
+  margin-top: 36px;
+}
+
+.digital-design h3 {
+  margin-top: 34px;
+}
+
+.service-design h3 {
+  margin-top: 30px;
+}
+
+.icons-top div {
+  width: 33.3%;
+}
+
+.icons-bottom {
+  width: 55%;
+  margin: 76px auto 0 auto;
+}
+
+.icons-bottom div {
+  width: 50%;
+}
+
+.ambient-design img {
+  margin-top: 11px;
+}
+
+.product-dev {
+  padding-right: 50px;
+}
+
+.ambient-design {
+  padding-left: 50px;
+}
+
+.ambient-design h3 {
+  margin-top: 34px;
+}
+
+.product-dev h3 {
+  margin-top: 23px;
+}
+
+/* -----------------------*/
+/* OUR WORK */
+/* -----------------------*/
+
+.our-work-h4 {
+  display: block;
+  width: 35.5%;
+  height: 33px;
+  margin: -103px auto 0 auto;
+  color: $main-purple;
+  text-align: center;
+  font-size: 22px;
+}
+
+.our-work-h4 h4 {
+  font-weight: 400;
+}
+
+.first-image {
+  max-width: 1237px;
+  margin: -42px auto 0 auto;
+}
+
+.first-image img {
+  max-width: 100%;
+  display: block;
+}
+
+// PURPLE BOX
+.purple-box {
+  background-color: $main-purple;
+  opacity: 0.9;
+  width: 28%;
+  height: 209px;
+  margin: -171px auto 0 auto;
+  z-index: 999;
+}
+
+.text-container h4 {
+  color: $main-white;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.text-container {
+  padding-top: 55px;
+}
+
+.text-container div {
+  padding-top: 45px;
+  color: $main-white;
+  text-align: center;
+  font-weight: 300;
+}
+
+.image-container {
+  display: flex;
+}
+
+.second-image img,
+.eigth-image img {
+  margin: 87px 96px 0 99px;
+}
+
+.third-image img,
+.ninth-image img {
+  float: left;
+  margin: 325px 105px 0 0;
+}
+
+.fourth-image {
+  max-width: 1289px;
+  margin: 0 auto 0 auto;
+}
+
+.fourth-image img {
+  margin: 98px 0 0 0;
+}
+
+.fifth-image img {
+  margin: 333px 96px 0 99px;
+}
+
+.sixth-image img {
+  margin: 96px auto 0 0;
+}
+
+.seventh-image img {
+  margin: 96px 0 0 0;
+}
+
+.seventh-image {
+  max-width: 1289px;
+  margin: 0 auto 0 auto;
+}
+
+.all-projects {
+  width: 329px;
+  height: 28px;
+  color: $main-purple;
+  margin: 46px auto 75px auto;
+  text-align: center;
+}
+
+/* -----------------------*/
+/* CONTACT SECTION */
+/* -----------------------*/
+
+.contact-us > .row {
+  background-color: $background;
+  height: 400px;
+}
+.contact {
+  width: 42%;
+  height: 100px;
+  margin: 114px auto 0 auto;
+}
+
+.contact h1 {
+  text-align: center;
+  color: $main-purple;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.contact div {
+  color: $main-purple;
+  margin: 90px auto 68px auto;
+  text-align: center;
+}
+
+.tenth-image {
+  max-height: 811px;
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+}
+
+/* -----------------------*/
+/* FOOTER */
+/* -----------------------*/
+
+footer > div {
+  background: $main-purple;
+  height: 420px;
+}
+
+.company-details {
+  display: flex;
+  line-height: 1.5;
+}
+
+.details-left {
+  width: 532px;
+  height: 160px;
+  margin: 86px 0 0 188px;
+}
+
+.info-tab-1,
+.info-tab-2 {
+  height: 50px;
+  display: flex;
+  color: $main-white;
+  margin-bottom: 34px;
+}
+
+.details-1,
+.details-2,
+.details-3,
+.details-4 {
+  width: 260px;
+  font-weight: 300;
+}
+
+.details-middle {
+  width: 326px;
+  height: 220px;
+  color: $main-white;
+  font-weight: 300;
+  margin: 86px 177px 114px 12px;
+}
+
+.social-icons {
+  width: 154px;
+  height: 209px;
+  color: $main-white;
+  margin: 80px 51px 131px 0;
+}
+
+.social-icons ul {
+  list-style-type: none;
+}
+
+.social-icons ul li {
+  margin-bottom: 31px;
+  text-align: center;
+}
+
