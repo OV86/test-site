@@ -13,7 +13,8 @@ $hover-border: #FF8671;
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
@@ -69,7 +70,11 @@ nav {
   margin-top: 41px;
   margin-right: 75px;
   width: 330px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -120,6 +125,8 @@ nav {
 
 .icons-top,
 .icons-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -240,6 +247,8 @@ nav {
 }
 
 .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -331,6 +340,8 @@ footer > div {
 }
 
 .company-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   line-height: 1.5;
 }
@@ -344,6 +355,8 @@ footer > div {
 .info-tab-1,
 .info-tab-2 {
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: $main-white;
   margin-bottom: 34px;
